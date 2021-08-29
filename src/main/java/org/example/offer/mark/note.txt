@@ -1,0 +1,33 @@
+spring 主要设计理念就是整合其他框架和组件,而不是自己实现---低侵入式
+
+spring版本不同,编译方式不同,以官网为主
+推荐使用jdk8或者11
+先预编译oxm模块
+
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.aliyun.com/repository/google/' }
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    maven { url "https://repo.spring.io/libs-spring-framework-build" }
+    maven { url "https://repo.spring.io/milestone" } // Reactor
+}
+
+
+
+
+
