@@ -36,5 +36,7 @@ public class RefreshExplain {
 
     //各种postProcessor基本都是用的责任链模式
 
+    //静态filed不能被注入
 
+    //https://github.com/mercyblitz/geekbang-lessons/tree/master/thinking-in-spring
 }
